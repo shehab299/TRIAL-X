@@ -25,8 +25,8 @@ def main(
     checkpoint=None,
 ):
     print("Loading data...")
-    train_sentences = load_data(os.path.join(DATA_DIR, "new_train.txt"))
-    val_sentences = load_data(os.path.join(DATA_DIR, "new_val.txt"))
+    train_sentences = load_data(os.path.join(DATA_DIR, "train.txt"))
+    val_sentences = load_data(os.path.join(DATA_DIR, "val.txt"))
 
     print("Building vocab...")
     word2id = build_vocab(train_sentences)
